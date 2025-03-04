@@ -1,6 +1,77 @@
-.container{
-    background-image : url(https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?cs=srgb&dl=color-depth-of-field-environment-1591447.jpg&fm=jpg) ;
-    background-size: cover;
-    height: 800px;
-} 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
 
+.container{
+    display: flex;
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.left-side{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+
+}
+
+.left-side img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+
+}
+
+.right-side{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+p{
+    margin: 0 0 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: gold;
+}
